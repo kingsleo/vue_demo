@@ -1,12 +1,17 @@
 <template>
     <div>
       About
+      {{msg}}
+      <input/>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'About'
+        name: 'About',
+        props: {
+            msg: String
+        }
     }
 </script>
 
